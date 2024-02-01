@@ -15,6 +15,8 @@ RUN apt-get update && \
     mopidy-soundcloud && \
     rm -rf /var/lib/apt/lists/*
 
+RUN mkdir /media
+
 # Set the default configuration file
 ENV MOPIDY_CONFIG=/config/mopidy.conf
 
