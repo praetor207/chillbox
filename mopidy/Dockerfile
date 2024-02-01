@@ -15,9 +15,6 @@ RUN apt-get update && \
     mopidy-soundcloud && \
     rm -rf /var/lib/apt/lists/*
 
-# Create a non-root user
-RUN useradd -m -s /bin/bash mopidy
-
 # Set the default configuration file
 ENV MOPIDY_CONFIG=/config/mopidy.conf
 
