@@ -12,7 +12,6 @@ RUN apt-get update && \
     apt-get update && \
     apt-get install -y \
     mopidy \
-    mopidy-spotify \
     mopidy-soundcloud && \
     rm -rf /var/lib/apt/lists/*
 
